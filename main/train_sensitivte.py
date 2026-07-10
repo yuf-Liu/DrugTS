@@ -254,11 +254,10 @@ class Drug:
             "ic50_true": test_labels,
             "IC50": y_pred
         })
-        df.to_csv(f"mm_cancer/banlance1/seed{self.seed}/pred_test.csv", index=False)
+        # df.to_csv(f"mm_cancer/banlance1/seed{self.seed}/pred_test.csv", index=False)
 
 
-    def predict(self, drug_names, smiles_list, cell_type, w_file, 
-                smile_encode_type='Molecular_finger', batch_size=64):
+    def predict(self, drug_names, smiles_list, cell_type, w_file, batch_size=64):
 
         ctrl_adata = self.adata[self.adata.obs["cell_type"] == cell_type]
         cell_type_id = torch.tensor(self.cell2id[cell_type], dtype=torch.long)
