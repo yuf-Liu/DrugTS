@@ -5,7 +5,6 @@
   <img src="img/img.png" alt="Overview" width="85%"/>
 </p>
 
-# DrugTS: Transcriptome Prediction, Drug Sensitivity Prediction and Drug Recommendation
 
 Using the DrugTS API, users can reproduce the results reported in our paper and train DrugTS on their own perturbation datasets with only a few lines of code.
 
